@@ -45,3 +45,13 @@ $(document).ready(function () {
         return false;
     });
 });
+// -----------preloader-----------------
+setTimeout(() => {
+    const box = document.getElementById("box");
+  
+    box.style.display = "none";
+  
+    window.scrollTo(0, 0);
+  
+    document.body.classList.remove("overflow-hidden");
+  }, 3000);
